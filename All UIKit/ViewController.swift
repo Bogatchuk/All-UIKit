@@ -89,6 +89,7 @@ class ViewController: UIViewController {
         progressView.setProgress(0, animated: true)
         
         
+        
         createToolBar()
         
         let tapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
