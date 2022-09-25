@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		882174DA28DF84A90008C347 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 882174D928DF84A90008C347 /* .gitignore */; };
+		882174DC28DF86FD0008C347 /* TrackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882174DB28DF86FD0008C347 /* TrackList.swift */; };
+		882174DE28E05E500008C347 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882174DD28E05E500008C347 /* DetailVC.swift */; };
 		88B8F11128C8A34F00DD365A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8F11028C8A34F00DD365A /* AppDelegate.swift */; };
 		88B8F11328C8A34F00DD365A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8F11228C8A34F00DD365A /* SceneDelegate.swift */; };
 		88B8F11528C8A34F00DD365A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8F11428C8A34F00DD365A /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		882174D928DF84A90008C347 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		882174DB28DF86FD0008C347 /* TrackList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackList.swift; sourceTree = "<group>"; };
+		882174DD28E05E500008C347 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		88B8F10D28C8A34F00DD365A /* All UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "All UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B8F11028C8A34F00DD365A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88B8F11228C8A34F00DD365A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				88B8F11028C8A34F00DD365A /* AppDelegate.swift */,
 				88B8F11228C8A34F00DD365A /* SceneDelegate.swift */,
 				88B8F11428C8A34F00DD365A /* ViewController.swift */,
+				882174DB28DF86FD0008C347 /* TrackList.swift */,
+				882174DD28E05E500008C347 /* DetailVC.swift */,
 				88B8F11628C8A34F00DD365A /* Main.storyboard */,
 				88B8F11928C8A35100DD365A /* Assets.xcassets */,
 				88B8F11B28C8A35100DD365A /* LaunchScreen.storyboard */,
@@ -142,9 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882174DE28E05E500008C347 /* DetailVC.swift in Sources */,
 				88B8F11528C8A34F00DD365A /* ViewController.swift in Sources */,
 				88B8F11128C8A34F00DD365A /* AppDelegate.swift in Sources */,
 				88B8F11328C8A34F00DD365A /* SceneDelegate.swift in Sources */,
+				882174DC28DF86FD0008C347 /* TrackList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

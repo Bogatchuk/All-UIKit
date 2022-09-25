@@ -184,7 +184,7 @@ This class supports multiple text styles through use of the attributedText prope
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="TableView"/>
                                                 <connections>
-                                                    <segue destination="DtJ-L0-bLM" kind="presentation" modalPresentationStyle="fullScreen" id="9wr-Wg-wpk"/>
+                                                    <segue destination="Q9c-Nj-72C" kind="presentation" modalPresentationStyle="fullScreen" id="9wr-Wg-wpk"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -296,22 +296,25 @@ This class supports multiple text styles through use of the attributedText prope
             </objects>
             <point key="canvasLocation" x="121.73913043478262" y="123.88392857142857"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Music-->
         <scene sceneID="2p2-JK-8bc">
             <objects>
-                <tableViewController id="DtJ-L0-bLM" sceneMemberID="viewController">
+                <tableViewController id="DtJ-L0-bLM" customClass="TrackList" customModule="All_UIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Iag-MU-bzM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Zke-gc-AeN">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Title" id="Zke-gc-AeN">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zke-gc-AeN" id="pxx-4e-NpM">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="tuv-LX-6Yx" kind="show" identifier="DetailSegue" id="LeW-8B-a0o"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -319,11 +322,77 @@ This class supports multiple text styles through use of the attributedText prope
                             <outlet property="delegate" destination="DtJ-L0-bLM" id="vcR-0W-EQd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ldg-CY-ig4"/>
+                    <navigationItem key="navigationItem" title="Music" id="ldg-CY-ig4">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="YoP-P8-d9S">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="DLk-FI-URR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hmn-DL-cBH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1251" y="-545"/>
+            <point key="canvasLocation" x="2160.8695652173915" y="-545.08928571428567"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="2Vf-UO-qbC">
+            <objects>
+                <viewController id="tuv-LX-6Yx" customClass="DetailVC" customModule="All_UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JfI-uh-fUR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wKU-3K-yEN">
+                                <rect key="frame" x="20" y="108" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wKU-3K-yEN" secondAttribute="height" multiplier="1:1" id="7SO-IO-76o"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCK-Ll-ikE">
+                                <rect key="frame" x="20" y="522" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wUJ-lT-Ngz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wKU-3K-yEN" firstAttribute="top" secondItem="wUJ-lT-Ngz" secondAttribute="top" constant="20" id="4yV-w5-K73"/>
+                            <constraint firstItem="wUJ-lT-Ngz" firstAttribute="trailing" secondItem="iCK-Ll-ikE" secondAttribute="trailing" constant="20" id="Cjo-d0-58k"/>
+                            <constraint firstItem="iCK-Ll-ikE" firstAttribute="top" secondItem="wKU-3K-yEN" secondAttribute="bottom" constant="40" id="LT0-PH-qs7"/>
+                            <constraint firstItem="iCK-Ll-ikE" firstAttribute="leading" secondItem="wUJ-lT-Ngz" secondAttribute="leading" constant="20" id="hve-Cc-CBR"/>
+                            <constraint firstItem="wKU-3K-yEN" firstAttribute="leading" secondItem="wUJ-lT-Ngz" secondAttribute="leading" constant="20" id="upM-J3-XpN"/>
+                            <constraint firstItem="wUJ-lT-Ngz" firstAttribute="trailing" secondItem="wKU-3K-yEN" secondAttribute="trailing" constant="20" id="zkg-tQ-TKy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="N9s-nq-cWZ"/>
+                    <connections>
+                        <outlet property="image" destination="wKU-3K-yEN" id="P1g-kI-pwz"/>
+                        <outlet property="titleLabel" destination="iCK-Ll-ikE" id="kGn-PA-bff"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GH2-cX-v9z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3034.7826086956525" y="-547.09821428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4qe-zL-L3f">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q9c-Nj-72C" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tal-6q-4Si">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DtJ-L0-bLM" kind="relationship" relationship="rootViewController" id="XaX-0B-Ans"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m7d-BT-FOo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250.7246376811595" y="-545.08928571428567"/>
         </scene>
     </scenes>
     <resources>
