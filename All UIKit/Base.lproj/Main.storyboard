@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lre-hS-ckY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -284,6 +284,7 @@ This class supports multiple text styles through use of the attributedText prope
                             <constraint firstAttribute="bottom" secondItem="7qY-cb-HQW" secondAttribute="bottom" constant="40" id="nP0-Dv-gJk"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="pAs-xL-hCI"/>
                     <size key="freeformSize" width="414" height="2896"/>
                     <connections>
                         <outlet property="activityIndicator" destination="4Yc-Os-8mW" id="X1T-qu-Xc1"/>
@@ -309,7 +310,7 @@ This class supports multiple text styles through use of the attributedText prope
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="121.73913043478262" y="123.88392857142857"/>
+            <point key="canvasLocation" x="1031.8840579710145" y="123.88392857142857"/>
         </scene>
         <!--Track Collections-->
         <scene sceneID="7Wx-yw-S2k">
@@ -362,7 +363,7 @@ This class supports multiple text styles through use of the attributedText prope
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8K-kb-H78" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1191" y="219"/>
+            <point key="canvasLocation" x="2100" y="218.97321428571428"/>
         </scene>
         <!--Music-->
         <scene sceneID="2p2-JK-8bc">
@@ -393,14 +394,14 @@ This class supports multiple text styles through use of the attributedText prope
                     <navigationItem key="navigationItem" title="Music" id="ldg-CY-ig4">
                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="YoP-P8-d9S">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="DLk-FI-URR"/>
+                                <segue destination="Lre-hS-ckY" kind="presentation" modalPresentationStyle="fullScreen" id="DLk-FI-URR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hmn-DL-cBH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2160.8695652173915" y="-545.08928571428567"/>
+            <point key="canvasLocation" x="3071.0144927536235" y="-545.08928571428567"/>
         </scene>
         <!--DetailVC-->
         <scene sceneID="2Vf-UO-qbC">
@@ -442,12 +443,13 @@ This class supports multiple text styles through use of the attributedText prope
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GH2-cX-v9z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3034.7826086956525" y="-547.09821428571422"/>
+            <point key="canvasLocation" x="3944.9275362318845" y="-547.09821428571422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4qe-zL-L3f">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q9c-Nj-72C" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="oXd-7Q-zeP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tal-6q-4Si">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -460,13 +462,35 @@ This class supports multiple text styles through use of the attributedText prope
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7d-BT-FOo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1250.7246376811595" y="-545.08928571428567"/>
+            <point key="canvasLocation" x="2160.8695652173915" y="-545.08928571428567"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0tn-3N-LSX">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Lre-hS-ckY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" shadowImage="tray.full" catalog="system" id="kRf-fw-pvG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="tintColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="JsB-b7-zNz"/>
+                        <segue destination="Q9c-Nj-72C" kind="relationship" relationship="viewControllers" id="ZTv-F2-PNF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="to2-S9-CtZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123.18840579710145" y="123.88392857142857"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="ZTv-F2-PNF"/>
         <segue reference="ybI-zC-KPJ"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="tray.full" catalog="system" width="128" height="88"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -478,6 +502,9 @@ This class supports multiple text styles through use of the attributedText prope
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
