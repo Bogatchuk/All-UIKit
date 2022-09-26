@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qiz-4h-pZn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -11,9 +11,102 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="41J-nN-YSM">
+            <objects>
+                <viewController id="312-hi-snS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fua-5Y-ROW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LGy-Gy-b6D">
+                                <rect key="frame" x="175" y="394.5" width="64" height="117.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etg-9B-Apn">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="49.5"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
+                                        <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💛" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcQ-BC-WxM">
+                                        <rect key="frame" x="5" y="57.5" width="54" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1V7-im-urk"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <color key="tintColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="LGy-Gy-b6D" firstAttribute="centerY" secondItem="1V7-im-urk" secondAttribute="centerY" id="IZp-1r-xJF"/>
+                            <constraint firstItem="LGy-Gy-b6D" firstAttribute="centerX" secondItem="1V7-im-urk" secondAttribute="centerX" id="nPK-ZV-iEr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PRt-Ac-dpe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2252.1739130434785" y="-90.401785714285708"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="tUM-ee-4XJ">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" modalTransitionStyle="crossDissolve" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Qiz-4h-pZn" customClass="PageViewController" customModule="All_UIKit" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ix-Tu-aMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1430" y="-90"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="D6Q-9i-MI4">
+            <objects>
+                <viewController storyboardIdentifier="ContentViewController" id="3NK-ej-1Ks" customClass="ContentViewController" customModule="All_UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dCd-MV-SAD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKr-gv-4Zw">
+                                <rect key="frame" x="167" y="403.5" width="80" height="99"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="80"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="87x-Ad-Blv">
+                                <rect key="frame" x="149" y="836" width="116" height="26"/>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEh-Mx-UbD">
+                                <rect key="frame" x="18" y="104" width="378" height="34.5"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="28"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XFf-cp-Fuy"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="nKr-gv-4Zw" firstAttribute="centerY" secondItem="XFf-cp-Fuy" secondAttribute="centerY" id="A8i-v1-F0s"/>
+                            <constraint firstItem="GEh-Mx-UbD" firstAttribute="top" secondItem="XFf-cp-Fuy" secondAttribute="top" constant="60" id="J4e-vo-5Eu"/>
+                            <constraint firstItem="XFf-cp-Fuy" firstAttribute="trailing" secondItem="GEh-Mx-UbD" secondAttribute="trailing" constant="18" id="KyY-1h-gQW"/>
+                            <constraint firstItem="nKr-gv-4Zw" firstAttribute="centerX" secondItem="XFf-cp-Fuy" secondAttribute="centerX" id="LW7-mb-siw"/>
+                            <constraint firstItem="87x-Ad-Blv" firstAttribute="centerX" secondItem="XFf-cp-Fuy" secondAttribute="centerX" id="SaX-24-5Tq"/>
+                            <constraint firstItem="87x-Ad-Blv" firstAttribute="bottom" secondItem="XFf-cp-Fuy" secondAttribute="bottom" id="XHc-Xl-ldq"/>
+                            <constraint firstItem="GEh-Mx-UbD" firstAttribute="leading" secondItem="XFf-cp-Fuy" secondAttribute="leading" constant="18" id="sIz-QN-YBY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emojiLabel" destination="nKr-gv-4Zw" id="dcf-LZ-rUj"/>
+                        <outlet property="pageControl" destination="87x-Ad-Blv" id="5AG-FY-Nff"/>
+                        <outlet property="presentTextLabel" destination="GEh-Mx-UbD" id="JDk-TC-Zic"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xkh-8Q-8NJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-668" y="-79"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="All_UIKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="All_UIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="2896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -464,6 +557,7 @@ This class supports multiple text styles through use of the attributedText prope
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="9wr-Wg-wpk"/>
         <segue reference="ybI-zC-KPJ"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -473,8 +567,14 @@ This class supports multiple text styles through use of the attributedText prope
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
