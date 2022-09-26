@@ -3,10 +3,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var textForPickerView = ["Hi!",
-                             "Bye!",
-                             "Hello!",
-                             "Good bye!"]
+    var textForPickerView = ["Hi !",
+                             "Bye !",
+                             "Hello !",
+                             "Good bye !"]
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var labelForSegmentedControl: UILabel!
