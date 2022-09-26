@@ -12,7 +12,9 @@
 		882174DE28E05E500008C347 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882174DD28E05E500008C347 /* DetailVC.swift */; };
 		882174E028E07A860008C347 /* TrackCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882174DF28E07A860008C347 /* TrackCollections.swift */; };
 		882174E228E07AD30008C347 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882174E128E07AD30008C347 /* TrackCell.swift */; };
-		882174E428E0B2790008C347 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882174E328E0B2790008C347 /* WebViewController.swift */; };
+		882174E628E19C750008C347 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882174E528E19C750008C347 /* ContentViewController.swift */; };
+		882174E828E19C960008C347 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882174E728E19C950008C347 /* PageViewController.swift */; };
+
 		88B8F11128C8A34F00DD365A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8F11028C8A34F00DD365A /* AppDelegate.swift */; };
 		88B8F11328C8A34F00DD365A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8F11228C8A34F00DD365A /* SceneDelegate.swift */; };
 		88B8F11528C8A34F00DD365A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8F11428C8A34F00DD365A /* ViewController.swift */; };
@@ -27,7 +29,9 @@
 		882174DD28E05E500008C347 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		882174DF28E07A860008C347 /* TrackCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollections.swift; sourceTree = "<group>"; };
 		882174E128E07AD30008C347 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
-		882174E328E0B2790008C347 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+
+		882174E528E19C750008C347 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		882174E728E19C950008C347 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		88B8F10D28C8A34F00DD365A /* All UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "All UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B8F11028C8A34F00DD365A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88B8F11228C8A34F00DD365A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 			children = (
 				88B8F11028C8A34F00DD365A /* AppDelegate.swift */,
 				88B8F11228C8A34F00DD365A /* SceneDelegate.swift */,
+				882174E728E19C950008C347 /* PageViewController.swift */,
+				882174E528E19C750008C347 /* ContentViewController.swift */,
 				88B8F11428C8A34F00DD365A /* ViewController.swift */,
 				882174E328E0B2790008C347 /* WebViewController.swift */,
 				882174DB28DF86FD0008C347 /* TrackList.swift */,
@@ -157,11 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882174E628E19C750008C347 /* ContentViewController.swift in Sources */,
 				882174E228E07AD30008C347 /* TrackCell.swift in Sources */,
 				882174DE28E05E500008C347 /* DetailVC.swift in Sources */,
 				882174E028E07A860008C347 /* TrackCollections.swift in Sources */,
 				88B8F11528C8A34F00DD365A /* ViewController.swift in Sources */,
 				88B8F11128C8A34F00DD365A /* AppDelegate.swift in Sources */,
+				882174E828E19C960008C347 /* PageViewController.swift in Sources */,
 				88B8F11328C8A34F00DD365A /* SceneDelegate.swift in Sources */,
 				882174DC28DF86FD0008C347 /* TrackList.swift in Sources */,
 				882174E428E0B2790008C347 /* WebViewController.swift in Sources */,
